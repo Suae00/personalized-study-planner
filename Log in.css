@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgb(223, 175, 183)50%,black)50%, url(27.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color:rgb(255, 244, 144);
+    font-size: 25px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: rgb(100, 100, 99);
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: rgb(231, 183, 229);
+}
+
+    .search{
+        width: 200px;
+        float: left;
+        margin-left: 270px;
+    }
+
+    .srch{
+        font-family: 'Times New Roman';
+        width: 100%;
+        height: 35px;
+        background-color: transparent;
+        border: 1px solid rgb(204, 107, 123);
+        margin-top: 5px;
+        color: aquamarine;
+        border-right: none;
+        font-size: 15px;
+        float: left;
+        padding: 0 6px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        display: block;
+        outline: none;
+        line-height: 35px;
+        display: none;
+    }
+
+.btn{
+    width: 100%;
+    height: 25px;
+    background: rgb(247, 242, 202);
+    border: 2px solid rgb(170, 170, 170);
+    margin-top: 13px;
+    color: antiquewhite;
+    font-size: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: rgb(48, 48, 51);
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.0px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9px;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: rgb(211, 123, 101);
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: antiquewhite;
+}
+
+.content span{
+    color: rgb(80, 67, 69);
+    font-size: 65px;
+}
+
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, black)50%, black 50%;
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: azure;
+    font-size: 22px;
+    background-color: rgb(149, 156, 124);
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid khaki;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: antiquewhite;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: white;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: khaki;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: khaki;
+    transition: 0.4s ease;
+}
+
+
+.btnn:hover{
+    background: rgb(230, 102, 140);
+    color: rgb(215, 169, 233);
+}
+
+.btnn a{
+    text-decoration: none;
+    color: aquamarine;
+    font-weight: bold;
+}
+
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form .link a{
+    text-decoration: none;
+    color: rgb(209, 201, 133);
+}
+
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.calendar {
+  background: #fff7fb;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(255,127,170,0.1);
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.calendar-header h3 {
+  font-family: 'Comic Neue', cursive;
+  color: #6b485b;
+}
+
+.calendar-header button {
+  background: #ff9ac2;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.calendar-header button:hover {
+  background: #ff7faa;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  text-align: center;
+}
+
+.calendar-grid div {
+  padding: 8px;
+  border-radius: 8px;
+  background: #ffeef3;
+  color: #6b485b;
+  font-weight: 600;
+}
+
+.calendar-grid div:hover {
+  background: #ffdae7;
+}
+

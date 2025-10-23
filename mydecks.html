@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Decks — StudyPlanner</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo"><div class="logo-dot">SP</div><div><h1>StudyPlanner</h1><small style="color:#6b485b">Personalized Study Planner</small></div></div>
+      <nav class="nav">
+        <a href="index.html">Get Started</a>
+        <a href="about.html">Planner</a>
+        <a href="mydecks.html" class="active">My Decks</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="tasks.html">My Tasks</a>
+      </nav>
+    </header>
+
+    <main class="hero" style="flex-direction:column;">
+      <section class="card" style="margin-bottom:12px;">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <h3 style="font-family:'Comic Neue',cursive">My Decks</h3>
+          <a class="btn" href="#">Add Deck</a>
+        </div>
+
+        <div class="deck-list">
+          <div class="deck">
+            <h4>WST — Introduction of HTML</h4>
+            <p style="font-size:13px;color:#7b596f">30 cards • Last review 2d ago</p>
+            <div style="margin-top:8px;">
+              <a href="#" class="btn secondary">Practice</a>
+            </div>
+          </div>
+          <div class="deck">
+            <h4>OOP — Encapsulation</h4>
+            <p style="font-size:13px;color:#7b596f">24 cards • Due today</p>
+            <div style="margin-top:8px;">
+              <a href="#" class="btn secondary">Practice</a>
+            </div>
+          </div>
+
+          
+          <div class="deck"><h4>History — Rizal</h4><p style="font-size:13px;color:#7b596f">12 cards</p></div>
+          <div class="deck"><h4>Science — Biodiversity</h4><p style="font-size:13px;color:#7b596f">18 cards</p></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h4 style="font-family:'Comic Neue',cursive">Add Quick Card</h4>
+        <form style="margin-top:10px; display:flex; gap:8px; flex-wrap:wrap;">
+          <input placeholder="Front (question)" style="flex:1; padding:8px 10px; border-radius:8px; border:1px solid rgba(43,27,43,0.06);" />
+          <input placeholder="Back (answer)" style="flex:1; padding:8px 10px; border-radius:8px; border:1px solid rgba(43,27,43,0.06);" />
+          <button class="btn">Add</button>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

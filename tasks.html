@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tasks — StudyPlanner</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <div class="logo-dot">SP</div>
+        <div>
+          <h1>StudyPlanner</h1>
+          <small style="color:#6b485b">Personalized Study Planner</small>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Get Started</a>
+        <a href="about.html">Planner</a>
+        <a href="mydecks.html">My Decks</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="mytask.html" class="active">My Tasks</a>
+      </nav>
+    </header>
+
+    <main class="hero" style="flex-direction:column;">
+      <section class="card">
+        <h3 style="font-family:'Comic Neue',cursive">My Tasks</h3>
+        <p style="color:#6b485b">Track your study tasks and progress.</p>
+
+        <div style="margin-top:12px;">
+          <div class="task"><input type="checkbox"> Finish STS quiz</div>
+          <div class="task"><input type="checkbox"> Read Lesson 2 (History)</div>
+          <div class="task"><input type="checkbox"> OOP quiz</div>
+        </div>
+      </section>
+
+      <section class="card" style="margin-top:12px;">
+        <h4 style="font-family:'Comic Neue',cursive">Progress</h4>
+        <div style="margin-top:10px;">
+          <div style="background:linear-gradient(90deg,#ffb1cb,#ff7faa); height:12px; width:70%; border-radius:8px;"></div>
+          <div style="margin-top:8px; font-size:13px; color:#6b485b;">70% weekly goal</div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

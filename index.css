@@ -1,0 +1,419 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Poppins:wght@400;600&display=swap');
+
+
+:root {
+  --bg1: #ffeef3;      
+  --accent: #ff7faa;  
+  --muted: #ffd9e6;
+  --card: #fff7fb;
+  --text-dark: #2b1b2b;
+  --soft-shadow: 0 8px 24px rgba(43,27,43,0.08);
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg1);  
+  color: var(--text-dark);
+}
+
+
+.container {
+  max-width: 1100px;
+  margin: 32px auto;
+  padding: 24px;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 24px;
+  background: linear-gradient(90deg, #ffd9e6, #fff0f6);
+  border-radius: 18px;
+  box-shadow: var(--soft-shadow);
+  border: 2px solid rgba(255,127,170,0.08);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo-dot {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--accent), #ffa3c7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: white;
+  font-family: 'Comic Neue', cursive;
+  box-shadow: 0 6px 18px rgba(255,127,170,0.25);
+}
+.logo h1 {
+  font-family: 'Comic Neue', cursive;
+  font-size: 18px;
+  color: var(--text-dark);
+}
+
+
+.nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.nav a {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+.nav a.active {
+  background: linear-gradient(90deg, #ffb1cb, #ff7faa);
+  color: white;
+  box-shadow: 0 6px 12px rgba(255,127,170,0.18);
+}
+
+
+.hero {
+  margin-top: 22px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+.card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: var(--soft-shadow);
+  border: 1px solid rgba(255,127,170,0.06);
+}
+
+
+.left {
+  flex: 1.1;
+  min-width: 260px;
+}
+.right {
+  flex: 0.6;
+  min-width: 220px;
+}
+
+
+.title-card h2 {
+  font-family: 'Comic Neue', cursive;
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+.title-card p {
+  color: #5a4753;
+  margin-bottom: 14px;
+}
+
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #ff9ac2, #ff7faa);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(255,127,170,0.14);
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid rgba(43,27,43,0.08);
+  color: var(--text-dark);
+}
+
+
+.small-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+.icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #fff, rgba(255,255,255,0.8));
+  border: 1px solid rgba(43,27,43,0.04);
+  font-weight: 700;
+  color: var(--accent);
+}
+
+
+.deck-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+.deck {
+  padding: 12px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #fff, #fff7fb);
+  border: 1px dashed rgba(255,127,170,0.12);
+}
+.deck h4 {
+  font-family: 'Comic Neue', cursive;
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+
+.calendar {
+  height: 220px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b485b;
+  font-weight: 600;
+}
+
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 6px;
+  border-radius: 10px;
+  background: #fff;
+  margin-bottom: 8px;
+  border: 1px solid rgba(43,27,43,0.03);
+}
+
+
+.footer-nav {
+  margin-top: 22px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+.footer-nav a {
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  color: var(--text-dark);
+}
+
+
+@media (max-width: 900px) {
+  .container { padding: 16px; }
+  .hero { flex-direction: column; }
+  .deck-list { grid-template-columns: repeat(1, 1fr); }
+  .nav { display: none; }
+  .header { flex-direction: column; gap: 12px; align-items: flex-start; }
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffe6ec;
+  color: #222;
+}
+
+
+.navbar {
+  width: 100%;
+  background-color: #ffb6c1;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu ul li {
+  margin: 0 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.menu ul li a:hover,
+.menu ul li a.active {
+  color: #000;
+  text-decoration: underline;
+}
+
+
+.content {
+  max-width: 800px;
+  margin: 80px auto;
+  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 span {
+  color: #ff6f91;
+}
+
+.par {
+  font-size: 17px;
+  line-height: 1.6;
+}
+.calendar-container {
+  border: 1px dashed rgba(255,127,170,0.3);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.month button {
+  background: linear-gradient(90deg, #ff9ac2, #ff7faa);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #6b485b;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.days .day {
+  min-height: 60px;
+  border: 1px dashed rgba(255,127,170,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border-radius: 6px;
+}
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.days div {
+  background-color: #ffeef3;
+  color: #6b485b;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-weight: 100;
+  min-height: 30px;
+}
+    
+    .mini-calendar {
+      margin-top: 10px;
+      background: #fff;
+      border-radius: 12px;
+      padding: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      font-family: 'Comic Neue', cursive;
+    
+    }
+    .mini-calendar .month {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+      color: #6b485b;
+      margin-bottom: 8px;
+    }
+    .mini-calendar .weekdays,
+    .mini-calendar .days {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      text-align: center;
+      font-size: 13px;
+    }
+    .mini-calendar .weekdays div {
+      font-weight: bold;
+      color: #6b485b;
+    }
+    .mini-calendar .days div {
+      padding: 4px;
+      border-radius: 6px;
+      color: #6b485b;
+    }
+    .mini-calendar .days div:hover {
+      background: #ffc1d6;
+      cursor: pointer;
+    }
+ .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 15px;
+  font-weight: bold;
+  color: #6b485b; 
+  margin: 0;
+  padding: 0;
+  white-space: nowrap; 
+}
+
+
+
